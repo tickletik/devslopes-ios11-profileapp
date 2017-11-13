@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -56,17 +57,18 @@
                                 <state key="normal" image="inboxButton"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SQn-IR-tzA">
-                                <rect key="frame" x="16" y="358" width="640" height="250"/>
+                                <rect key="frame" x="16" y="358" width="640" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Data Image" translatesAutoresizingMaskIntoConstraints="NO" id="Kte-5A-daS">
-                                        <rect key="frame" x="0.0" y="0.0" width="140" height="250"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" secondItem="Kte-5A-daS" secondAttribute="height" multiplier="1:1" id="dqG-bi-g7N"/>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="140" id="rcD-Pk-fBO"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Images Image" translatesAutoresizingMaskIntoConstraints="NO" id="dJF-g2-h6z">
-                                        <rect key="frame" x="140" y="0.0" width="500" height="250"/>
+                                        <rect key="frame" x="140" y="0.0" width="500" height="140"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
