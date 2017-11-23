@@ -60,30 +60,30 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Soj-y2-fpW">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Soj-y2-fpW">
                                 <rect key="frame" x="16" y="335" width="736" height="358"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Data Image" translatesAutoresizingMaskIntoConstraints="NO" id="m6U-OE-fZX">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Data Image" translatesAutoresizingMaskIntoConstraints="NO" id="m6U-OE-fZX">
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="358"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="m6U-OE-fZX" secondAttribute="height" multiplier="1:1" id="3DE-CL-9bH"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Images Image" translatesAutoresizingMaskIntoConstraints="NO" id="ntW-4h-guR">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Images Image" translatesAutoresizingMaskIntoConstraints="NO" id="ntW-4h-guR">
                                         <rect key="frame" x="378" y="0.0" width="358" height="358"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="v4Z-2U-XfG">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="v4Z-2U-XfG">
                                 <rect key="frame" x="16" y="708" width="736" height="358"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Videos Image" translatesAutoresizingMaskIntoConstraints="NO" id="HZ9-mF-uiG">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Videos Image" translatesAutoresizingMaskIntoConstraints="NO" id="HZ9-mF-uiG">
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="358"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="HZ9-mF-uiG" secondAttribute="height" multiplier="1:1" id="SiO-WG-DYX"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Code" translatesAutoresizingMaskIntoConstraints="NO" id="0hp-zA-iyH">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Code" translatesAutoresizingMaskIntoConstraints="NO" id="0hp-zA-iyH">
                                         <rect key="frame" x="378" y="0.0" width="358" height="358"/>
                                     </imageView>
                                 </subviews>
@@ -120,6 +120,7 @@
                                 <include reference="C55-wb-rbs"/>
                                 <exclude reference="YJk-BO-883"/>
                                 <exclude reference="elF-7x-Fhe"/>
+                                <exclude reference="wV2-0W-pF0"/>
                             </mask>
                         </variation>
                     </view>
