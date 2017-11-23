@@ -13,6 +13,7 @@
     <customFonts key="customFonts">
         <array key="Avenir.ttc">
             <string>Avenir-Book</string>
+            <string>Avenir-Medium</string>
         </array>
     </customFonts>
     <scenes>
@@ -38,7 +39,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devslopes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNK-6D-OHv">
-                                <rect key="frame" x="134" y="156.5" width="232" height="68.5"/>
+                                <rect key="frame" x="134" y="156" width="232" height="68.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -103,6 +104,18 @@
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="nst-C1-jzD"/>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ht-mk-Gu1">
+                                <rect key="frame" x="234" y="870" width="300" height="60"/>
+                                <color key="backgroundColor" red="0.87638800760000002" green="0.1085358501" blue="0.23401407890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Zzu-VZ-Fxx"/>
+                                    <constraint firstAttribute="width" constant="300" id="tll-ey-bdg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
+                                <state key="normal" title="Customized Dashboard">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -114,12 +127,14 @@
                             <constraint firstItem="FNK-6D-OHv" firstAttribute="centerY" secondItem="oSa-Gz-NCq" secondAttribute="centerY" id="YJk-BO-883"/>
                             <constraint firstItem="Nz8-ZW-Xs9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZTP-nv-I92"/>
                             <constraint firstItem="Soj-y2-fpW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZdK-vZ-4jC"/>
+                            <constraint firstItem="8Ht-mk-Gu1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="avA-Pm-mzo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tpE-95-yYb" secondAttribute="trailing" constant="16" id="bEC-dq-tVf"/>
                             <constraint firstItem="tpE-95-yYb" firstAttribute="centerY" secondItem="oSa-Gz-NCq" secondAttribute="centerY" constant="15" id="eRK-gL-dS1"/>
                             <constraint firstItem="tpE-95-yYb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="elF-7x-Fhe"/>
                             <constraint firstItem="v4Z-2U-XfG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mRg-Cg-O22"/>
                             <constraint firstItem="oSa-Gz-NCq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qyC-jZ-oa3"/>
                             <constraint firstItem="v4Z-2U-XfG" firstAttribute="top" secondItem="Soj-y2-fpW" secondAttribute="bottom" constant="30" id="s1w-UB-cga"/>
+                            <constraint firstItem="8Ht-mk-Gu1" firstAttribute="top" secondItem="v4Z-2U-XfG" secondAttribute="bottom" constant="60" id="sw4-Zh-dBS"/>
                             <constraint firstItem="oSa-Gz-NCq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="tMs-H0-TNK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Soj-y2-fpW" secondAttribute="trailing" constant="16" id="tyX-PD-z7l"/>
                             <constraint firstItem="Nz8-ZW-Xs9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vXS-2D-YdG"/>
@@ -129,6 +144,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="8Ht-mk-Gu1"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="bEC-dq-tVf"/>
                                 <exclude reference="C55-wb-rbs"/>
@@ -138,6 +156,9 @@
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="8Ht-mk-Gu1"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="bEC-dq-tVf"/>
                                 <include reference="C55-wb-rbs"/>
@@ -155,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="99.400299850074973"/>
+            <point key="canvasLocation" x="136.71875" y="99.0234375"/>
         </scene>
     </scenes>
     <resources>
