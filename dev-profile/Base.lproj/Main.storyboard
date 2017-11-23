@@ -62,7 +62,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" spacing="15"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Soj-y2-fpW">
-                                <rect key="frame" x="16" y="242.5" width="736" height="250"/>
+                                <rect key="frame" x="16" y="280" width="736" height="250"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Data Image" translatesAutoresizingMaskIntoConstraints="NO" id="m6U-OE-fZX">
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="250"/>
@@ -81,7 +81,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="v4Z-2U-XfG">
-                                <rect key="frame" x="16" y="507.5" width="736" height="250"/>
+                                <rect key="frame" x="16" y="560" width="736" height="250"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Videos Image" translatesAutoresizingMaskIntoConstraints="NO" id="HZ9-mF-uiG">
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="250"/>
@@ -104,6 +104,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Nz8-ZW-Xs9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Py-iF-CAh"/>
+                            <constraint firstItem="Soj-y2-fpW" firstAttribute="top" secondItem="oSa-Gz-NCq" secondAttribute="bottom" constant="50" id="AQy-zG-NlD"/>
                             <constraint firstItem="FNK-6D-OHv" firstAttribute="centerY" secondItem="oSa-Gz-NCq" secondAttribute="centerY" constant="15" id="C55-wb-rbs"/>
                             <constraint firstItem="FNK-6D-OHv" firstAttribute="leading" secondItem="oSa-Gz-NCq" secondAttribute="trailing" constant="8" id="K2c-ww-ZA7"/>
                             <constraint firstItem="v4Z-2U-XfG" firstAttribute="top" secondItem="Soj-y2-fpW" secondAttribute="bottom" constant="15" id="NXF-Uh-sQR"/>
@@ -115,6 +116,7 @@
                             <constraint firstItem="tpE-95-yYb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="elF-7x-Fhe"/>
                             <constraint firstItem="v4Z-2U-XfG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mRg-Cg-O22"/>
                             <constraint firstItem="oSa-Gz-NCq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qyC-jZ-oa3"/>
+                            <constraint firstItem="v4Z-2U-XfG" firstAttribute="top" secondItem="Soj-y2-fpW" secondAttribute="bottom" constant="30" id="s1w-UB-cga"/>
                             <constraint firstItem="oSa-Gz-NCq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="tMs-H0-TNK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Soj-y2-fpW" secondAttribute="trailing" constant="16" id="tyX-PD-z7l"/>
                             <constraint firstItem="Nz8-ZW-Xs9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vXS-2D-YdG"/>
@@ -127,7 +129,9 @@
                             <mask key="constraints">
                                 <exclude reference="bEC-dq-tVf"/>
                                 <exclude reference="C55-wb-rbs"/>
+                                <exclude reference="AQy-zG-NlD"/>
                                 <exclude reference="eRK-gL-dS1"/>
+                                <exclude reference="s1w-UB-cga"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -135,9 +139,13 @@
                                 <include reference="bEC-dq-tVf"/>
                                 <include reference="C55-wb-rbs"/>
                                 <exclude reference="YJk-BO-883"/>
+                                <include reference="AQy-zG-NlD"/>
+                                <exclude reference="wmu-b4-iuD"/>
                                 <include reference="eRK-gL-dS1"/>
                                 <exclude reference="elF-7x-Fhe"/>
                                 <exclude reference="wV2-0W-pF0"/>
+                                <exclude reference="NXF-Uh-sQR"/>
+                                <include reference="s1w-UB-cga"/>
                             </mask>
                         </variation>
                     </view>
