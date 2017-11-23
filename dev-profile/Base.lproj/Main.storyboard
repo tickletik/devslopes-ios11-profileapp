@@ -37,9 +37,8 @@
                                     <constraint firstAttribute="width" constant="110" id="Z6I-CK-PaF"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Devslopes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNK-6D-OHv">
-                                <rect key="frame" x="134" y="157" width="96" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devslopes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNK-6D-OHv">
+                                <rect key="frame" x="134" y="162" width="88" height="26"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -79,6 +78,8 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Nz8-ZW-Xs9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Py-iF-CAh"/>
+                            <constraint firstItem="FNK-6D-OHv" firstAttribute="leading" secondItem="oSa-Gz-NCq" secondAttribute="trailing" constant="8" id="K2c-ww-ZA7"/>
+                            <constraint firstItem="FNK-6D-OHv" firstAttribute="centerY" secondItem="oSa-Gz-NCq" secondAttribute="centerY" id="YJk-BO-883"/>
                             <constraint firstItem="Nz8-ZW-Xs9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZTP-nv-I92"/>
                             <constraint firstItem="oSa-Gz-NCq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qyC-jZ-oa3"/>
                             <constraint firstItem="oSa-Gz-NCq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="tMs-H0-TNK"/>
