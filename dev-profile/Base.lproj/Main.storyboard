@@ -43,21 +43,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ie3-Ay-pJn">
-                                <rect key="frame" x="90" y="275" width="57" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="cameraButton"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxL-Dd-1SP">
-                                <rect key="frame" x="159" y="275" width="57" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="favoriteButton"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qc1-Ep-nsM">
-                                <rect key="frame" x="231" y="275" width="57" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="inboxButton"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="tpE-95-yYb">
+                                <rect key="frame" x="91" y="254" width="232" height="57"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ie3-Ay-pJn">
+                                        <rect key="frame" x="0.0" y="0.0" width="57" height="57"/>
+                                        <state key="normal" image="cameraButton"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxL-Dd-1SP">
+                                        <rect key="frame" x="87" y="0.0" width="58" height="57"/>
+                                        <state key="normal" image="favoriteButton"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qc1-Ep-nsM">
+                                        <rect key="frame" x="175" y="0.0" width="57" height="57"/>
+                                        <state key="normal" image="inboxButton"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Soj-y2-fpW">
                                 <rect key="frame" x="16" y="372" width="280" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -81,9 +83,11 @@
                             <constraint firstItem="FNK-6D-OHv" firstAttribute="leading" secondItem="oSa-Gz-NCq" secondAttribute="trailing" constant="8" id="K2c-ww-ZA7"/>
                             <constraint firstItem="FNK-6D-OHv" firstAttribute="centerY" secondItem="oSa-Gz-NCq" secondAttribute="centerY" id="YJk-BO-883"/>
                             <constraint firstItem="Nz8-ZW-Xs9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZTP-nv-I92"/>
+                            <constraint firstItem="tpE-95-yYb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="elF-7x-Fhe"/>
                             <constraint firstItem="oSa-Gz-NCq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qyC-jZ-oa3"/>
                             <constraint firstItem="oSa-Gz-NCq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="tMs-H0-TNK"/>
                             <constraint firstItem="Nz8-ZW-Xs9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vXS-2D-YdG"/>
+                            <constraint firstItem="tpE-95-yYb" firstAttribute="top" secondItem="oSa-Gz-NCq" secondAttribute="bottom" constant="24" id="wV2-0W-pF0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
