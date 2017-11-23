@@ -30,9 +30,12 @@
                                     <constraint firstAttribute="height" constant="150" id="GRB-Ww-EV1"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="devslopesProfileLogo" translatesAutoresizingMaskIntoConstraints="NO" id="oSa-Gz-NCq">
-                                <rect key="frame" x="16" y="112" width="110" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devslopesProfileLogo" translatesAutoresizingMaskIntoConstraints="NO" id="oSa-Gz-NCq">
+                                <rect key="frame" x="16" y="120" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="Qqu-H4-GyA"/>
+                                    <constraint firstAttribute="width" constant="110" id="Z6I-CK-PaF"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Devslopes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNK-6D-OHv">
                                 <rect key="frame" x="134" y="157" width="96" height="21"/>
@@ -77,6 +80,8 @@
                         <constraints>
                             <constraint firstItem="Nz8-ZW-Xs9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Py-iF-CAh"/>
                             <constraint firstItem="Nz8-ZW-Xs9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZTP-nv-I92"/>
+                            <constraint firstItem="oSa-Gz-NCq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qyC-jZ-oa3"/>
+                            <constraint firstItem="oSa-Gz-NCq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="tMs-H0-TNK"/>
                             <constraint firstItem="Nz8-ZW-Xs9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vXS-2D-YdG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
